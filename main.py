@@ -8,6 +8,8 @@ from upstage import extract_text_with_upstage, mask_personal_info, chat_with_ope
 import tempfile
 from risk_assessor import LegalRiskAssessor
 from answer import get_legal_advice
+from PIL import Image
+
 json_result = None
 # 세션 상태 초기화
 if "page" not in st.session_state:
@@ -210,7 +212,13 @@ elif st.session_state.page == "tutorial":
 
     with col1:
         st.markdown('<div class="orange-header">M$ney<span class="dot">.</span> 사용설명서</div>', unsafe_allow_html=True)
-        st.markdown("이미지")
+        image_paths = ["tutorial1.png", "tutorial2.png", "tutorial3.png"]
+
+        # 이미지 출력
+        for path in image_paths:
+            image = Image.open(path)
+            st.image(image, use_column_width=True)
+
     
     with col2:    
         st.markdown("""
