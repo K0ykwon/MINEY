@@ -8,7 +8,7 @@ class SearchingTerms(BaseModel):
         Terms: List[int]
 
 def selector(text, n=3):
-    csv_test = pd.read_csv('.\\referecnes\\reference.pdf.csv')
+    csv_test = pd.read_csv('./referecnes/reference.pdf.csv')
     file = ''.join([str(i)+'. ' + csv_test['content'][i] + '\n' for i in range(20)])
     
     client=OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
