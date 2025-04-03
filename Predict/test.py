@@ -32,7 +32,7 @@ class KoBERTRegressor(nn.Module):
 
 # 모델 초기화
 model = KoBERTRegressor(bert_model).to(device)
-model.load_state_dict(torch.load(".\\Predict\\Iamidiot.pth", map_location=device))
+model.load_state_dict(torch.load("./Predict/Iamidiot.pth", map_location=device))
 model.eval()
 
 # 예측 함수
