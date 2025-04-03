@@ -250,13 +250,13 @@ elif st.session_state.page == "tutorial":
             2. M$ney가 읽어온 계약서를 확인 후 M$ney 에게 계약서 내용을 전달해 주세요. 수정이 가능합니다!
         </div>
          <div class="sentence" style="background-color:#fff; padding:20px; border-radius:10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); margin-bottom: 15px;">
-            3. 임대차계약전문가 M$ney가 계약서를 분석하고 계약서에서 불리한 조항, 주의해야 할 조항을 확인해줘요
+            3. 임대차 계약 전문가 M$ney가 계약서를 분석하고, 불리하거나 주의해야 할 조항을 꼼꼼히 확인해줘요.
         </div>
         <div class="sentence" style="background-color:#fff; padding:20px; border-radius:10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); margin-bottom: 15px;">
-            4. M$ney에서 더욱 정확한 조언을 얻기 위해 먼저 상황을 구체적으로 설명을 해주세요. M$ney가 판례들을 바탕으로 조치해야 할 방안을 제안해줍니다.
+            4. 더 정확한 조언을 받으려면, 상황을 구체적으로 설명해 주세요. M$ney가 관련 판례를 바탕으로 취해야 할 조치를 제안해드립니다.
         </div>
         <div class="sentence" style="background-color:#fff; padding:20px; border-radius:10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); margin-bottom: 15px;">
-            5. 이제 궁금한 점이 생겼다면 M$ney에게 무엇이든 질문해주세요! 세심한 ai 분석을 바탕으로 정확한 답변을 드립니다.
+            5. 궁금한 점이 생기셨다면, 언제든 M$ney에게 질문해 보세요! 세심한 AI 분석을 바탕으로 정확한 답변을 드릴게요.
         </div>
         </br></br></br>
         """, unsafe_allow_html=True)
