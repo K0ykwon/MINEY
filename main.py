@@ -217,7 +217,7 @@ elif st.session_state.page == "tutorial":
         </br></br></br></br>
         <div class="sentence"> ⚠️ 이 웹사이트는 light 모드로 봐주세요! ⚠️</div>  
         <div class="sentence" style="background-color:#fff; padding:20px; border-radius:10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); margin-bottom: 15px;">
-            1. 임대차 계약서 파일을 업로드하세요 (반드시 PDF 파일을 준비해주세요!)
+            1. 임대차 계약서의 첫 페이지를 업로드해 주세요. (반드시 PDF 파일이어야 합니다!)
         </div>
         <div class="sentence" style="background-color:#fff; padding:20px; border-radius:10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); margin-bottom: 15px;">
             2. M$ney가 읽어온 계약서를 확인 후 M$ney 에게 계약서 내용을 전달해 주세요. 수정이 가능합니다!
