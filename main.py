@@ -92,6 +92,14 @@ html, body, div, span, input, label, textarea, button, section, article, aside, 
         text-align: center
     }
                 
+    .subcatch {
+        font-family: 'MaruBuri' !important;
+        font-size: 16px;
+        font-weight: 500;
+        color: #111;
+        text-align: center
+    }
+                
     .catchline {
         font-family: 'MaruBuri' !important;
         font-size: 16px;
@@ -140,8 +148,9 @@ div.stButton > button:hover {
             """, unsafe_allow_html=True)
 
         st.markdown('<h1 class="mango-title">  M$ney<span class="dot">.</span></h1>', unsafe_allow_html=True)
-        st.markdown('<div class="subtitle">보증금, 더는 혼자 싸우지 마세요</div>', unsafe_allow_html=True)
-        st.markdown('<div class="subtitle">내만의 보증금 AI 지킴이: M$ney</div>', unsafe_allow_html=True)
+        st.markdown('<div class="subtitle">보증금, 더는 혼자 싸우지 마세요!</div>', unsafe_allow_html=True)
+        st.markdown('<div class="subcatch">나만의 보증금 AI 지킴이: M$ney</div>', unsafe_allow_html=True)
+        st.markdown('<div class="catchline">  </div>', unsafe_allow_html=True)
         st.markdown('<div class="catchline">M$ney가 처음이라면 정확한 분석을 위해 튜토리얼을 확인해주세요!</div>', unsafe_allow_html=True)
     
     # 오른쪽 버튼 - HTML 버튼 태그 사용
