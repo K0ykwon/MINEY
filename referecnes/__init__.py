@@ -7,6 +7,6 @@ def getPrecedent(prompt, n=3):
     files = selector(prompt, n = 3)
     out = []
     for file in files:
-        out.append(generator(get_content('.\\referecnes\\ocr_outputs\\'+file)))
+        out.append(generator(get_content('./referecnes/ocr_outputs/'+file)))
 
     return out
