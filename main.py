@@ -217,7 +217,7 @@ elif st.session_state.page == "tutorial":
         # 이미지 출력
         for path in image_paths:
             image = Image.open(path)
-            st.image(image, use_column_width=True)
+            st.image(image, use_container_width=True)
 
     
     with col2:    
