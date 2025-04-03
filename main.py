@@ -405,10 +405,7 @@ elif st.session_state.page == "ai":
 
         if uploaded_file:
             file_bytes = uploaded_file.read()
-            file_stream = BytesIO(file_bytes)
-
-            st.markdown("**내 계약서**")
-            show_pdf(file_bytes)
+            file_stream = BytesIO(file_bytes)            
 
     with col2:
         if uploaded_file:
