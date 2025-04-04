@@ -67,6 +67,7 @@ git clone https://github.com/UpstageAI/cookbook/usecase/agi-agent-application/mi
 # run
 pip install -r requirements.txt
 streamlit run main.py
+```
 
 ---
 
