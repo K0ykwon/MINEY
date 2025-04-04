@@ -1,32 +1,122 @@
-# Miney
+# 🛠️ M$ney
 
-**Miney**는 부동산 계약서 분석 및 법률 상담을 제공하는 서비스입니다. 사용자는 자신이 체결한 임대차 계약서를 업로드하고, 이를 바탕으로 법률적인 위험도 평가를 받을 수 있습니다. 또한, 사용자가 겪고 있는 분쟁 상황에 맞는 법적 대응 방법과 예상 승소 확률을 제공하여 실용적인 법률 상담을 제공합니다.
+## 📌 Overview
+This project was developed as part of the **AGI Agent Application Hackathon**.  
+It aims to support victims of **rental fraud** by providing AI-powered legal document analysis and actionable legal guidance by leveraging advanced AI agent technologies.
 
-## 🚀 서비스 링크
+---
 
-[서비스 바로가기](https://iamanidiot.streamlit.app/)
+## 🚀 Key Features
+✅ **Contract Analysis**: Uses Upstage OCR and GPT models to extract and analyze key clauses from rental contracts, identifying hidden risks and unfavorable terms.
+✅ **Actionable Legal Guidance**: Users can describe their legal situation, and based on BERT-powered analysis, the system provides relevant laws, precedents, required documents, and step-by-step instructions for legal response.
+✅ **Contextual Q&A**: Users can ask questions in natural language, and the system — fine-tuned on legal texts using BERT — returns document-specific, context-aware legal answers.
 
-## 💡 서비스 특징
+---
 
-- **계약서 분석**: 사용자가 업로드한 계약서의 내용을 분석하여 각 조항에 대한 위험도를 평가합니다.
-- **법적 대응 방안**: 계약서 분석을 기반으로 분쟁 상황에 맞는 법적 대응 방안을 제시합니다.
-- **예상 승소 확률**: 법적 위험 분석과 함께, 임차인이 실제로 승소할 확률을 예측해드립니다.
-- **판례 제공**: 관련 판례와 법률적 근거를 제공하여 사용자가 더 명확한 법적 판단을 내릴 수 있도록 돕습니다.
+## 🖼️ Demo / Screenshots
+![Landing](./readmeimage/landing.png)
+![Functions](./readmeimage/readme.png)
+  
+[👉 demo video](https://www.youtube.com/watch?v=GuP2Haq75-Y)
+[👉 live demo website link ](https://iamanidiot.streamlit.app/)
 
-## 📈 사용 예시
+---
 
-1. **계약서 업로드**: 계약서 파일을 업로드하여 계약의 위험도를 평가합니다.
-2. **분쟁 상황 입력**: 사용자가 현재 겪고 있는 분쟁에 대해 설명을 입력합니다.
-3. **법률 상담**: 입력한 정보를 바탕으로, 예상 승소 확률과 함께 법적 대응 방법을 제공받습니다.
+## 🧩 Tech Stack
 
-## 🛠 기술 스택
+**Frontend**: Streamlit  
+**Backend**: Python (custom scripts & API integrations) 
+**Database**: FAISS (Vector Store for Legal Document Retrieval)  
+**Others**: OpenAI API / Upstage OCR API/ LangChain / HuggingFace Transformers
 
-- **Streamlit**: 웹 애플리케이션을 위한 프레임워크로, 간단한 UI를 통해 사용자가 서비스를 쉽게 이용할 수 있습니다.
-- **OpenAI GPT-3**: 텍스트 분석 및 법적 대응을 위한 자연어 처리 모델.
-- **KoBERT**: 한국어 법률 텍스트 분석을 위한 BERT 기반 모델.
-- **Git LFS**: 대용량 파일을 효율적으로 관리하기 위한 Git 확장 툴.
-- **FAISS**: 효율적인 검색을 위한 벡터 검색 시스템.
+---
 
-## 💻 로컬 설치 방법
+## 🏗️ Project Structure
+```
+📁MINEY/
+├── .devcontainer/ 
+├── docs/ 
+├── Predict/ 
+├── readmeiamge/ 
+├── referencnes/ 
+├── 계약서input예시(테스트용)/ 
+├── .gitattributes 
+├── .gitignore 
+├── answer.py 
+├── contract_analysis.py 
+├── main.py 
+├── rag_law_current.py 
+├── README.md 
+├── requirements.txt 
+├── risk_assessor.py 
+├── test.py 
+├── tutorial1.png 
+├── tutorial2.png 
+├── tutorial3.png 
+├── upstage.py
 
-1. GitHub 레포지토리 클론
+---
+
+## 🔧 Setup & Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/UpstageAI/cookbook/usecase/agi-agent-application/miney.git
+
+# run
+pip install -r requirements.txt
+streamlit run main.py
+
+---
+
+## 📁 Dataset & References
+
+### 📊 Dataset Used
+
+- **LBox Open Dataset**  
+  Korean court rulings and legal clauses used to fine-tune the BERT model for legal prediction tasks.
+
+- **Custom OCR Samples**  
+  Real-world rental contracts, including the official government-standard lease agreement, were collected and anonymized for OCR testing, parsing, and downstream legal analysis.
+
+### 🔗 References / Resources
+
+- [LangChain](https://www.langchain.com/)
+- [OpenAI API Docs](https://platform.openai.com/docs)
+- [LBox](https://lbox.kr/v2)
+
+
+---
+
+## 🙌 Team Members
+
+| Name        | Role               | GitHub         |
+|-------------|--------------------|----------------|
+| Ko Youngkwon | AI Developer | [@k0ykwon](https://github.com/k0ykwon) |
+| Seo Suyeon | Frontend Developer  | [@ellie3413](https://github.com/ellie3413) |
+| Yeom Seo Kyung | Backend Developer  | [@skyyeom](https://github.com/skyyeom) |
+| Yoon Tae Du | Backend Developer  | [@taedooit](https://github.com/taedooit) |
+| Lim Chaeyoon | Backend Developer  | [@2022148081](https://github.com/2022148081) |
+
+---
+
+## ⏰ Development Period
+Last updated: 2025-04-05
+
+---
+
+## 📄 License
+This project is licensed under the MIT license.  
+See the [LICENSE](./LICENSE) file for more details.
+
+---
+
+## 💬 Additional Notes
+- This project was developed as an MVP during the AGI Agent Application Hackathon.
+- All legal responses are generated by AI models and are intended for informational purposes only.
+- It is not a substitute for professional legal advice. Please consult a licensed attorney for critical legal decisions.
+- We plan to expand the service to other legal domains (e.g., labor law, consumer protection) in the future.
+
+
+
+
