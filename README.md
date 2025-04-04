@@ -7,9 +7,9 @@ It aims to support victims of **rental fraud** by providing AI-powered legal doc
 ---
 
 ## 🚀 Key Features
-✅ **Contract Analysis**: Uses Upstage OCR and GPT models to extract and analyze key clauses from rental contracts, identifying hidden risks and unfavorable terms.
-✅ **Actionable Legal Guidance**: Users can describe their legal situation, and based on BERT-powered analysis, the system provides relevant laws, precedents, required documents, and step-by-step instructions for legal response.
-✅ **Contextual Q&A**: Users can ask questions in natural language, and the system — fine-tuned on legal texts using BERT — returns document-specific, context-aware legal answers.
+- ✅ **Contract Analysis**: Uses Upstage OCR and GPT models to extract and analyze key clauses from rental contracts, identifying hidden risks and unfavorable terms.
+- ✅ **Actionable Legal Guidance**: Users can describe their legal situation, and based on BERT-powered analysis, the system provides relevant laws, precedents, required documents, and step-by-step instructions for legal response.
+- ✅ **Contextual Q&A**: Users can ask questions in natural language, and the system — fine-tuned on legal texts using BERT — returns document-specific, context-aware legal answers.
 
 ---
 
