@@ -1,9 +1,7 @@
 import os
 from openai import OpenAI
-from rag_law_current import rag
+from rag_law_current import handle_user_query
 from risk_assessor import LegalRiskAssessor
-from Predict import bertPredict
-from referecnes import getPrecedent
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -82,14 +80,10 @@ def assess_contract_with_risk(contract_data):
     return contract_with_risk
 
 def get_legal_advice(user_input, contract_data, state):
+    conversation_history = []
     contract_with_risk = assess_contract_with_risk(contract_data)
-    res = rag(make_question_prompt(user_input, contract_with_risk, state))
-    _ = getPrecedent(res)
-
-    if state == 0:
-        return res + '\n\n [ 예상 승소 확률: ' + str(bertPredict(make_question_prompt(user_input, contract_data, state))*100) + '% ] ' + '\n\n' + "\n\n".join([i['no']+'\n'+i['situation']+'\n'+i['judgement']+'\n'+i['evidence'] for i in _])
-    else:
-        return res
+    res = handle_user_query(make_question_prompt( user_input, contract_with_risk, state), conversation_history)
+    return res
 
 '''
 # 예시 실행
