@@ -27,7 +27,7 @@ It aims to support victims of **rental fraud** by providing AI-powered legal doc
 **Frontend**: Streamlit  
 **Backend**: Python (custom scripts & API integrations) 
 **Database**: FAISS (Vector Store for Legal Document Retrieval)  
-**Others**: OpenAI API / Upstage OCR API/ LangChain / HuggingFace Transformers
+**Others**: OpenAI API / Upstage DocAI API/ LangChain / HuggingFace Transformers
 
 ---
 
