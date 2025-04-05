@@ -65,7 +65,6 @@ It aims to support victims of **rental fraud** by providing AI-powered legal doc
 git clone https://github.com/UpstageAI/cookbook/usecase/agi-agent-application/miney.git
 
 # run
-pip install -r requirements.txt
 streamlit run main.py
 ```
 
