@@ -75,7 +75,7 @@ streamlit run main.py
 ### 📊 Dataset Used
 
 - **LBox Open Dataset**  
-  Korean court rulings and legal clauses used to fine-tune the BERT model for legal prediction tasks.
+  Korean court rulings and legal clauses used both to fine-tune the BERT model for legal prediction, and to build a FAISS-based retrieval system for RAG (Retrieval-Augmented Generation).
 
 - **Custom OCR Samples**  
   Real-world rental contracts, including the official government-standard lease agreement, were collected and anonymized for OCR testing, parsing, and downstream legal analysis.
